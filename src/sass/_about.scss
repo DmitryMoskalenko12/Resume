@@ -1,5 +1,111 @@
 .about{
-  height: 625px;
+  min-height: 840px;
   padding-top: 120px;
   padding-bottom: 120px;
+  &__wrapper{
+    width: 1040px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 400px 570px;
+    grid-template-rows: 250px 300px;
+    grid-auto-rows: 300px;
+    column-gap: 70px;
+  }
+  &__wrapper-img{
+    width: 400px;
+    height: 550px;
+    grid-column-start: 1/2;
+    grid-row-start: 1/3;
+    >img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  &__me{
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    z-index: 1;
+    margin-left: 10px;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: #FFA501;
+    z-index: -1;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -14px;
+    
+  }
+  }
+  &__name{
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+    text-align: left;
+    margin-top: 6px;
+  }
+  &__divider{
+    width: 60px;
+    height: 0px;
+    border: 2px solid #FFA501;
+    margin-top: 4px;
+  }
+  &__descr{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 20px;
+  }
+  &__wrapper-exp{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto,260px));
+    grid-template-rows: repeat(2, minmax(auto,116px));
+    grid-column: 2/3;
+    grid-row: 2/3;
+    column-gap: 50px;
+    row-gap: 20px;
+  }
+  &__block-exp{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+  }
+  &__wr-img{
+    margin-left: 20px;
+    margin-top: 15px;
+    position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: #FFA501;
+    z-index: -1;
+    border-radius: 100%;
+    top: -60%;
+    /* transform: translateY(-75%); */
+    left: -13px;
+  }
+  }
+  &__exp-wrap{
+    width: 200px;
+  }
+  &__exp-name{
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+  }
+  &__exp-descr{
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+  }
 }
