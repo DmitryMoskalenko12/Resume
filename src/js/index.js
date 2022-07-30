@@ -13,4 +13,17 @@ window.addEventListener('DOMContentLoaded',()=>{
           leftMenu.classList.remove('left-menu_active');
           overlay.style.display = 'none';
         })
+/* для блока с процентами */
+  const input = document.querySelectorAll('.lang__numb');
+        width1 = document.querySelectorAll('.lang__novis');
+        function calc() {
+          input.forEach((item,i)=>{
+            item.addEventListener('input',()=>{
+              width1[i].style.width = `${input[i].value}`;
+            })
+          })
+        }
+        calc()
+       
+
 })

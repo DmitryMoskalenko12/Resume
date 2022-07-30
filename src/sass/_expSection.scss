@@ -1,5 +1,5 @@
 .practic{
-  min-height: 800px;
+  min-height: 560px;
   padding-bottom: 120px;
   &__title{
     width: 46px;
@@ -42,8 +42,11 @@
   }
   &__wrapper{
     display: grid;
+    width: 986px;
     grid-template-columns: repeat(2,412px);
     column-gap: 136px;
+    margin: 0 0 0 120px;
+    
   }
   &__block{
     position: relative;

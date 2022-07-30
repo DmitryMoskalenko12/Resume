@@ -3,10 +3,11 @@
 }
 .container{
   margin: 0 auto;
-  width: 960px;
+  width: 1140px;
 }
 
 @import 'mainSection';
 @import 'buttons';
 @import 'about';
-@import 'expSection'
+@import 'expSection';
+@import 'sectionLang';
