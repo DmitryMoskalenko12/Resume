@@ -24,6 +24,35 @@ window.addEventListener('DOMContentLoaded',()=>{
           })
         }
         calc()
-       
+/* отправка данных с формы */
+  const form = document.querySelector('.contact-form__main');
+  form.addEventListener('submit', (e)=>{
+   e.preventDefault();
+   const formData = new FormData(form);
+
+   async function post(url, data) {
+    res = await fetch(url, {
+      method:'POST',
+      headers:{
+        'Content-type': 'application/json'
+      },
+      body: data
+    })
+    return await res.json()
+   }
+   const json = JSON.stringify(Object.fromEntries(formData.entries()))
+
+   post('http://localhost:3000/formAnswer', json)
+   .then(()=>{
+    form.reset();
+    const div = document.createElement('div');
+    div.textContent='Спасибо я с вами свяжусь';
+    form.append(div);
+    setTimeout(()=>{
+      div.remove()
+    }, 2000)
+   })
+  })
+
 
 })
