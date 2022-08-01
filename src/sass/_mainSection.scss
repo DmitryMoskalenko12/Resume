@@ -118,7 +118,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 250px;
   height: 100%;
   padding-top: 100px;
   background: #FFA501;
@@ -141,6 +141,7 @@
   &__wrapper{
     list-style-type: none;
     padding-right: 0;
+    margin: 0 auto;
   }
   &__item{
     position: relative;
@@ -153,7 +154,7 @@
     border-radius: 100%;
     top: 50%;
     transform: translateY(-50%);
-    left: -20px;
+    left: -25px;
     border: 1px solid #000000;
   }
     >a{
@@ -168,7 +169,7 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 90px;
-    height: 20px;
+    height: 25px;
     margin-top: 200px;
   }
   &__icon{

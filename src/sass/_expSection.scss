@@ -54,13 +54,14 @@
       content: '';
       margin-left: -43px;
       position: absolute;
-      height: 90%;
+      height: 95%;
       width: 1px;
       background-color: #000000;
     }
   }
   &__descr{
-    margin-bottom: 45px;
+    min-height: 129px;
+    margin-top: 45px;
   }
   &__educ{
     position: relative;
@@ -79,6 +80,7 @@
     }
   }
   &__item{
+    min-height: 39px;
     display: flex;
     margin-bottom: 12px;
   }
