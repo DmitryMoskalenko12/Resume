@@ -162,6 +162,24 @@
     color: #000000;
     margin-top: 28px;
   }
-  
+  &__policy-wrap{
+    display: flex;
+    min-width: 565px;
+    min-height: 45px;
+    align-items: center;
+  }
+  &__policy{
+    min-width: 311px;
+    min-height: 18px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 35px;
+    margin-top: 25px;
+  }
+  &__link-policy{
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+  }
  
 }
