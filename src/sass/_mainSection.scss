@@ -124,10 +124,10 @@
   background: #FFA501;
   z-index: 3;
   transform: translateX(-100%);
-  transition: 1s all;
+  transition: 0.5s all;
   &_active{
     transform: translateX(0%);
-    transition: 1s all;
+    transition: 0.5s all;
   }
   &__close{
     position: absolute;
