@@ -1,8 +1,8 @@
 .main-section{
   position: relative;
   padding-top: 206px;
-  padding-bottom: 362px;
-  height: 625px;
+  padding-bottom: 170px;
+  min-height: 625px;
   background: url(../img/Background.jpg) center center/cover no-repeat;
     &__descr{
       display: flex;

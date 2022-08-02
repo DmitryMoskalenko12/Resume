@@ -1,13 +1,13 @@
 .contact-form{
   min-height: 600px;
+  padding-bottom: 91px;
   &__wrapper{
-    width: 1053px;
     display: grid;
     grid-template-columns: 400px 585px;
     grid-template-rows: 232px 368px;
     column-gap: 68px;
     row-gap: 30px;
-    margin: 0 auto;
+    justify-content: center;
   }
   &__wrapper-img{
     width: 400px;
@@ -16,6 +16,7 @@
   &__img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
   &__contacts{
     position: relative;

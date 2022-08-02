@@ -41,12 +41,14 @@
     margin: 0 auto;
   }
   &__wrapper{
-    width: 1135px;
+    /* width: 1135px; */
     display: grid;
     grid-template-columns: repeat(4,280px);
     grid-template-rows: repeat(2, 280px);
     gap: 5px;
+    grid-auto-rows: 280px;
     margin-top: 60px;
+    justify-content: center;
   }
   &__link{
     display: block;
