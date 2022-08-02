@@ -2,7 +2,6 @@
 .container{
   max-width: 1320px;
 }
-
 }
 @media(max-width: 1199px){
 .container{
@@ -13,7 +12,6 @@
   display: none;
 }
 }
-
 .about{
   &__wrapper{
     grid-template-columns: 400px 500px;
@@ -29,7 +27,6 @@
     margin-left: 0px;
   }
   }
-
 .practic{
   &__wrapper{
     grid-template-columns: repeat(2, 351px);
@@ -38,7 +35,6 @@
     min-height: 140px;
   }
 }
-
 .lang{
   &__wrap-card{
     grid-template-columns: repeat(auto-fit, 270px);
@@ -63,7 +59,6 @@
   grid-row: unset;
 }
 }
-
 .prace{
   &__wrapper{
     column-gap: 180px;
@@ -81,26 +76,109 @@
     height: 600px;
   }
 }
-
 }
 
 @media(max-width: 991px){
 .container{
   max-width: 960px;
 }
+.main-section{
+  &__title2{
+    font-size: 27px; 
+  }  
 }
+.about{
+  &__wrapper{
+    grid-template-columns: 300px 330px;
+    grid-template-rows: 395px minmax(250px, auto);
+  }
+  &__wrapper-exp{
+    grid-template-columns: repeat(auto-fit, 328px);
+    grid-template-rows: auto auto;
+    column-gap: 3px;
+
+  }
+  &__wrapper-img{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/3;
+  }
+  &__block-exp{
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+.practic{
+  &__wrapper {
+    grid-template-columns: repeat(1, 357px);
+    justify-content: center;
+    margin: 0 0 0 0;
+  }
+  &__block {
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+}
+.prace{
+  &__wrapper{
+    grid-template-columns: repeat(2, 316px);
+    column-gap: 44px;
+  }
+}
+.contact-form{
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  &__wrapper-img{
+    display: none;
+  }
+  &__main{
+    width: 583px;
+    margin: 0 auto;
+  }
+  &__descr{
+    margin: 0 auto;
+  }
+  &__contacts{
+    margin: 0 auto;
+    &::before{
+      content: '';
+      left: 25%;      
+    }
+  }
+  &__call{
+    text-align: center;
+  }
+  &__divider{
+    margin: 0 auto;
+  }
+  &__evres{
+    text-align: center;
+    margin-top: 5px;
+  }
+  &__social{
+    margin-bottom: -5px;
+    margin: 0 auto;
+  }
+  &__policy-wrap{
+    justify-content: center;
+  }
+}
+
+}
+
 @media(max-width: 767px){
 .container{
   max-width: 720px;
-}  
+}
+
+
 }
 @media(max-width: 575px){
 .container{
-  max-width: 540px;
+  max-width: 100%;
 }
 }
-@media(min-width: 320px){
-.container{
-  width: 100%;
-}
-  }
